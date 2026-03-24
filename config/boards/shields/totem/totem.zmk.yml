@@ -3,7 +3,7 @@ id: totem
 name: TOTEM
 type: shield
 url: https://github.com/GEIGEIGEIST/TOTEM
-requires: [seeed_xiao]
+requires: [seed_xiao]
 features:
   - keys
 siblings:
