@@ -94,7 +94,6 @@
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃   LALT    ┃    DEL    ┃   BSPC    ┃   ┃   SPACE   ┃   ENTER   ┃    RALT   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
       bindings = <
                 &kp N1      &bt N2      &kp N3      &kp N4      &kp N5          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0
                 &kp PLUS    &kp MINUS   &kp STAR    &kp FSLH    &kp LBKT        &kp RIGHT   &kp DOWN    &kp UP      &kp LEFT    &none
@@ -131,14 +130,14 @@
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃           ┃           ┃           ┃           ┃           ┃   ┃ MOVE_LEFT ┃ MOVE_DOWN ┃  MOVE_UP  ┃ MOVE_RIGHT┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃ SCRL_LEFT ┃ SCRL_DOWN ┃  SCRL_UP  ┃ SCRL_RIGHT┃           ┃  BT_NEXT  ┃
+// ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃ SCRL_LEFT ┃ SCRL_DOWN ┃  SCRL_UP  ┃ SCRL_RIGHT┃           ┃  BT_NXT   ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
+//                                     ┃           ┃           ┃   LCLK    ┃   ┃   RCLK    ┃   MCLK    ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
       bindings = <
                 &trans      &trans      &trans      &trans      &none           &trans      &trans      &trans      &trans      &trans
                 &trans      &trans      &trans      &trans      &none           &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT  &none 
-    &trans      &trans      &trans      &trans      &trans      &none           &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT  &none  &bt BT_NEXT
+    &trans      &trans      &trans      &trans      &trans      &none           &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT  &none  &bt BT_NXT
                                         &trans      &trans      &mkp LCLK       &mkp RCLK   &mkp MCLK   &trans
       >;
     };
@@ -158,7 +157,7 @@
       bindings = <
                 &kp F1      &kp F2      &kp F3      &kp F4      &none           &trans      &trans      &trans      &trans      &trans
                 &kp F5      &kp F6      &kp F7      &kp F8      &none           &trans      &trans      &trans      &trans      &trans
-    &bt BT_PREV &kp F9      &kp F10     &kp F11     &kp F12     &none           &trans      &trans      &trans      &trans      &trans      &trans
+    &bt BT_PRV  &kp F9      &kp F10     &kp F11     &kp F12     &none           &trans      &trans      &trans      &trans      &trans      &trans
                                         &trans      &bt BT_CLR  &trans          &trans      &trans      &trans
       >;
     };
