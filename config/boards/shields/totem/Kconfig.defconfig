@@ -1,6 +1,9 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
+config CONFIG_ZMK_BOARD_COMPAT
+    default y
+
 if SHIELD_TOTEM_LEFT
 
 config ZMK_KEYBOARD_NAME
