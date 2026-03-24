@@ -6,8 +6,9 @@ url: https://github.com/GEIGEIGEIST/TOTEM
 requires: [seeed_xiao]
 features:
   - keys
-  - bluetooth
-  - mouse
+  - bt
+  - outputs
+  - pointing
 siblings:
   - totem_left
   - totem_right
