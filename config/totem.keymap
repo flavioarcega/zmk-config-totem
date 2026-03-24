@@ -17,7 +17,22 @@
   tapping-term-ms = <170>;
 };
 
+&mmv {
+  x-input-code = <INPUT_REL_X>;
+  y-input-code = <INPUT_REL_Y>;
+  time-to-max-speed-ms = <300>;
+  acceleration-exponent = <1>;
+};
+
+&msc {
+    x-input-code = <INPUT_REL_HWHEEL>;
+    y-input-code = <INPUT_REL_WHEEL>;
+    time-to-max-speed-ms = <300>;
+    acceleration-exponent = <0>;
+};
+
 / {
+
 //  combos {
 //    compatible = "zmk,combos";
 //    combo_esc {
@@ -44,20 +59,6 @@
 //        <&macro_tap &kp G &kp I &kp F>;
 //    };
 //  };
-
-  &mmv {
-    x-input-code = <INPUT_REL_X>;
-    y-input-code = <INPUT_REL_Y>;
-    time-to-max-speed-ms = <300>;
-    acceleration-exponent = <1>;
-  };
-
-  &msc {
-      x-input-code = <INPUT_REL_HWHEEL>;
-      y-input-code = <INPUT_REL_WHEEL>;
-      time-to-max-speed-ms = <300>;
-      acceleration-exponent = <0>;
-  };
 
   keymap {
     compatible = "zmk,keymap";
