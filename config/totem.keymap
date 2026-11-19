@@ -36,10 +36,9 @@
     macros {
         cpf: cpf {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             wait-ms = <10>;
-            bindings
-                = <&macro_tap &kp 0 &kp 4 &kp 4 &kp 9 &kp 0 &kp 5 &kp 2 &kp 7 &kp 9 &kp 6 &kp 9>
-                ;
+            bindings = <&macro_tap &kp 0 &kp 4 &kp 4 &kp 9 &kp 0 &kp 5 &kp 2 &kp 7 &kp 9 &kp 6 &kp 9>;
         };
     };
 };
