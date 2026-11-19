@@ -174,9 +174,9 @@
 
             bindings = <
                             &kp F1        &kp F2        &kp F3        &kp F4       &none            &bt BT_CLR_ALL &studio_unlock  &none        &none        &none
-                            &kp F5        &kp F6        &kp F7        &kp F8       &none            &bt BT_CLR        &cpf        &trans       &none        &none
+                            &kp F5        &kp F6        &kp F7        &kp F8       &none            &bt BT_CLR        &cpf         &trans       &none        &none
               &bt BT_PRV    &kp F9        &kp F10       &kp F11       &kp F12      &none            &none             &none        &none        &none        &none          &none
-                                                        &kb K_CMENU   &kb LEFT_GUI &kp LG(PAGE_UP)  &kp LG(PAGE_DOWN) &none        &none
+                                                        &kp K_CMENU   &kp LEFT_GUI &kp LG(PAGE_UP)  &kp LG(PAGE_DOWN) &none        &none
             >;
         };
     };
