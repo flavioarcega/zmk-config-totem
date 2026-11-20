@@ -91,7 +91,7 @@
             bindings = <
                           &kp N1         &kp N2      &kp N3         &kp N4         &kp N5           &kp N6        &kp N7        &kp N8        &kp N9        &kp N0
                           &kp LSHFT      &kp LCTRL   &none          &trans         &none            &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &none
-              &trans      &none          &none       &none          &none          &none            &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       &kp RBKT       &trans
+              &none       &none          &none       &none          &none          &none            &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       &kp RBKT       &none
                                                      &trans         &trans         &trans           &trans        &trans        &trans
             >;
         };
@@ -119,7 +119,7 @@
             bindings = <
                           &kp N1        &kp N2        &kp N3        &kp N4        &kp N4            &kp N6        &kp N7        &kp N8        &kp N9        &kp N0
                           &kp PLUS      &kp MINUS     &kp STAR      &kp FSLH      &kp EQUAL         &none         &trans        &none         &kp RCTRL     &kp RSHFT
-              &trans      &kp LBKT      &none         &none         &kp BSLH      &none             &none         &none         &none         &none         &none          &trans
+              &none       &kp LBKT      &none         &none         &kp BSLH      &none             &none         &none         &none         &none         &none          &none
                                                       &trans        &trans        &trans            &trans        &trans        &trans
             >;
         };
@@ -134,21 +134,21 @@
         mouse_layer {
             label = "MOUSE";
 
-  //                     ┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓   ┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
-  //                     ┃             ┃             ┃             ┃             ┃             ┃   ┃  SCRN_LEFT  ┃  SCRL_DOWN  ┃   SCRN_UP   ┃  SCRN_RIGHT ┃  PRINT_SCR  ┃
-  //                     ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫
-  //                     ┃             ┃             ┃  <PRESSED>  ┃             ┃             ┃   ┃  MOVE_LEFT  ┃  MOVE_DOWN  ┃   MOVE_UP   ┃  MOVE_RIGHT ┃ SINGLE_QUOTE┃
-  //       ┏━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┓
-  //       ┃             ┃             ┃             ┃             ┃             ┃             ┃   ┃  SCRL_LEFT  ┃  SCRL_DOWN  ┃   SCRL_UP   ┃  SCRL_RIGHT ┃             ┃   BT_NXT    ┃
-  //       ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛
+  //                     ┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓   ┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┓
+  //                     ┃             ┃   BT_PRV    ┃             ┃   BT_NXT    ┃             ┃   ┃  SCRN_LEFT  ┃  SCRL_DOWN  ┃   SCRN_UP   ┃  SCRN_RIGHT ┃  PRINT_SCR   ┃
+  //                     ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━━┫
+  //                     ┃             ┃             ┃  <PRESSED>  ┃             ┃             ┃   ┃  MOVE_LEFT  ┃  MOVE_DOWN  ┃   MOVE_UP   ┃  MOVE_RIGHT ┃ SINGLE_QUOTE ┃
+  //       ┏━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━┓
+  //       ┃             ┃             ┃             ┃             ┃             ┃             ┃   ┃  SCRL_LEFT  ┃  SCRL_DOWN  ┃   SCRL_UP   ┃  SCRL_RIGHT ┃              ┃             ┃
+  //       ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┻━━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛
   //                                                 ┃             ┃             ┃    LCLK     ┃   ┃    RCLK     ┃    MCLK     ┃             ┃
   //                                                 ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛   ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛
 
             bindings = <
-                            &none         &none         &none         &none         &none             &kp LG(LEFT)   &kp LG(DOWN)   &kp LG(UP)   &kp LG(RIGHT)   &kp PSCRN
-                            &none         &none         &trans        &none         &none             &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &kp SINGLE_QUOTE
-              &none         &none         &none         &none         &none         &none             &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &none      &bt BT_NXT
-                                                        &none         &none         &mkp RCLK         &mkp LCLK      &mkp MCLK      &none
+                            &none        &bt BT_PRV    &none         &bt BT_NXT    &none             &kp LG(LEFT)   &kp LG(DOWN)   &kp LG(UP)   &kp LG(RIGHT)   &kp PSCRN
+                            &none        &none         &trans        &none         &none             &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &kp SINGLE_QUOTE
+              &none         &none        &none         &none         &none         &none             &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &none       &none
+                                                       &none         &none         &mkp RCLK         &mkp LCLK      &mkp MCLK      &none
             >;
         };
 
@@ -175,7 +175,7 @@
             bindings = <
                             &kp F1        &kp F2        &kp F3        &kp F4       &none            &bt BT_CLR_ALL &studio_unlock  &none        &none        &none
                             &kp F5        &kp F6        &kp F7        &kp F8       &none            &bt BT_CLR        &cpf         &trans       &none        &none
-              &bt BT_PRV    &kp F9        &kp F10       &kp F11       &kp F12      &none            &none             &none        &none        &none        &none          &none
+              &none         &kp F9        &kp F10       &kp F11       &kp F12      &none            &none             &none        &none        &none        &none          &none
                                                         &kp K_CMENU   &kp LEFT_GUI &kp LG(PAGE_UP)  &kp LG(PAGE_DOWN) &none        &none
             >;
         };
